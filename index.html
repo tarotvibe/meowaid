@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeowAid - Help Street Cats</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #FFD6EC, #FFFAE3);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 450px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #FF4081;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1rem;
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+    .crypto {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 15px;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      word-break: break-word;
+    }
+    .crypto:hover {
+      background: #ffe6f2;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: #666;
+    }
+    small {
+      display: block;
+      margin-top: 5px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🐱 MeowAid 🐾</h1>
+    <p>
+      Your support can rescue street cats from hunger and illness 💖<br>
+      Every donation means food, medicine, and hope for a better life 🌟
+    </p>
+    <div class="crypto" onclick="copyToClipboard('0x33C15652119d737E8623dc3E9692288C5BE5fB28')">
+      BNB: 0x33C15652119d737E8623dc3E9692288C5BE5fB28
+      <small>Click to copy</small>
+    </div>
+    <div class="crypto" onclick="copyToClipboard('bc1q2elvl2e2e5xef4gnegwjj8tqtql8t0626zuf5t')">
+      BTC: bc1q2elvl2e2e5xef4gnegwjj8tqtql8t0626zuf5t
+      <small>Click to copy</small>
+    </div>
+    <div class="footer">Follow us on Instagram: @Meow_Aid</div>
+  </div>
+
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied: ' + text);
+      });
+    }
+  </script>
+</body>
+</html>
