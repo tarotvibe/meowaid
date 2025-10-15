@@ -49,13 +49,19 @@
     .coin-label {
       font-size: 1.2rem;
       font-weight: bold;
-      color: #FF4081;
       margin-bottom: 5px;
+    }
+    .coin-label.bnb {
+      color: #F3BA2F; /* رنگ طلایی مخصوص BNB */
+    }
+    .coin-label.btc {
+      color: #F7931A; /* رنگ نارنجی مخصوص BTC */
     }
     .footer {
       margin-top: 20px;
-      font-size: 0.85rem;
+      font-size: 1.1rem; /* بزرگ‌تر از قبل */
       color: #666;
+      font-weight: bold;
     }
     small {
       display: block;
@@ -73,12 +79,12 @@
       Every transaction saves a life. ❤️
     </p>
     <div class="crypto" onclick="copyToClipboard('0x33C15652119d737E8623dc3E9692288C5BE5fB28')">
-      <div class="coin-label">BNB</div>
+      <div class="coin-label bnb">BNB</div>
       0x33C15652119d737E8623dc3E9692288C5BE5fB28
       <small>Click to copy</small>
     </div>
     <div class="crypto" onclick="copyToClipboard('bc1q2elvl2e2e5xef4gnegwjj8tqtql8t0626zuf5t')">
-      <div class="coin-label">BTC</div>
+      <div class="coin-label btc">BTC</div>
       bc1q2elvl2e2e5xef4gnegwjj8tqtql8t0626zuf5t
       <small>Click to copy</small>
     </div>
