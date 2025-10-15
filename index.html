@@ -1,13 +1,49 @@
+<p>Learn how BNB and BTC donations are making a real impact on street cat rescue projects worldwide.</p>
+      </div>
+
+      <div class="blog-card">
+        <h3><a href="#">Success Stories of MeowAid 🐾</a></h3>
+        <p>Read heartwarming stories of cats saved thanks to the generosity of our supporters and crypto donors.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied: ' + text);
+      });
+    }
+  </script>
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MeowAid - Help Street Cats</title>
-  <style>
-    * {
-      box-sizing: border-box;
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Help street cats with MeowAid! Donate crypto like BNB or BTC and save lives. Read our articles and stay informed about cat rescue.">
+  <meta name="keywords" content="street cats, donate cats, crypto donation, BNB, BTC, animal rescue, cat charity, cat blog, help cats">
+  <meta name="robots" content="index, follow">
+
+  <!-- Structured Data for Donation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DonateAction",
+    "target": "https://www.meowaid.com",
+    "recipient": {
+      "@type": "Organization",
+      "name": "MeowAid"
     }
+  }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,16 +62,10 @@
       width: 100%;
       text-align: center;
     }
-    h1 {
-      font-size: 2rem;
-      color: #FF4081;
-      margin-bottom: 15px;
-    }
-    p {
-      font-size: 1rem;
-      margin: 20px 0;
-      line-height: 1.6;
-    }
+    h1 { font-size: 2rem; color: #FF4081; margin-bottom: 15px; }
+    h2 { font-size: 1.3rem; color: #FF4081; margin: 15px 0 10px; }
+    h3 { font-size: 1.1rem; color: #FF4081; margin: 10px 0; }
+    p { font-size: 1rem; margin: 15px 0; line-height: 1.6; }
     .crypto {
       background: #f9f9f9;
       padding: 15px;
@@ -45,28 +75,43 @@
       transition: all 0.3s ease;
       word-break: break-word;
     }
-    .crypto:hover {
-      background: #ffe6f2;
+    .crypto:hover { background: #ffe6f2; }
+    .footer { margin-top: 20px; font-size: 0.85rem; color: #666; }
+    small { display: block; margin-top: 5px; color: #999; }
+    img { max-width: 100%; border-radius: 15px; margin: 15px 0; }
+
+    /* Blog Cards */
+    .blog-section { margin-top: 30px; text-align: left; }
+    .blog-card {
+      background: #fff0f5;
+      border-radius: 15px;
+      padding: 15px;
+      margin: 10px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
     }
-    .footer {
-      margin-top: 20px;
-      font-size: 0.85rem;
-      color: #666;
-    }
-    small {
-      display: block;
-      margin-top: 5px;
-      color: #999;
-    }
+    .blog-card:hover { transform: translateY(-3px); }
+    .blog-card a { color: #FF4081; text-decoration: none; font-weight: bold; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>🐱 MeowAid 🐾</h1>
+
+    <!-- Featured Image with Alt -->
+    <img src="cat-rescue.jpg" alt="Help street cats by donating crypto" />
+
     <p>
       Your support can rescue street cats from hunger and illness 💖<br>
       Every donation means food, medicine, and hope for a better life 🌟
     </p>
+
+    <h2>Support Cats with Just a Few Cents</h2>
+    <p>Even $0.50 can feed a hungry kitty 🍀</p>
+
+    <h2>Donate Crypto Easily</h2>
+    <p>Click your preferred cryptocurrency address to copy it instantly:</p>
+
     <div class="crypto" onclick="copyToClipboard('0x33C15652119d737E8623dc3E9692288C5BE5fB28')">
       BNB: 0x33C15652119d737E8623dc3E9692288C5BE5fB28
       <small>Click to copy</small>
@@ -75,15 +120,22 @@
       BTC: bc1q2elvl2e2e5xef4gnegwjj8tqtql8t0626zuf5t
       <small>Click to copy</small>
     </div>
-    <div class="footer">Follow us on Instagram: @Meow_Aid</div>
-  </div>
 
-  <script>
-    function copyToClipboard(text) {
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Copied: ' + text);
-      });
-    }
-  </script>
-</body>
-</html>
+    <h3>Follow Our Journey</h3>
+    <p>Stay updated with our rescue missions and stories of saved cats:</p>
+    <div class="footer">
+      Instagram: <a href="https://instagram.com/Meow_Aid" target="_blank">@Meow_Aid</a>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="blog-section">
+      <h2>Latest Articles 📰</h2>
+
+      <div class="blog-card">
+        <h3><a href="#">5 Easy Ways to Help Street Cats Today</a></h3>
+        <p>Discover simple actions you can take to provide food, shelter, and care for stray cats in your community.</p>
+      </div>
+
+      <div class="blog-card">
+        <h3><a href="#">How Crypto Donations Feed Cats 💖</a></h3>
+        
