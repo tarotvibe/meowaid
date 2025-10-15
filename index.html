@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MeowAid | Support Street Cats with Crypto</title>
   <meta name="description" content="MeowAid is a charity project helping street cats with food, medicine, and care. Donate using BNB or BTC and make a difference.">
+  <meta name="keywords" content="MeowAid, street cats, charity, donate, BNB, BTC, crypto donation, cat charity">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph for social preview -->
+  <meta property="og:title" content="MeowAid | Support Street Cats with Crypto">
+  <meta property="og:description" content="Help street cats by donating crypto. Every transaction saves a life. ❤️">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tarotvibe.github.io/meowaid/">
+  <meta property="og:image" content=""> <!-- optional, kept empty since no image -->
+  
   <style>
     body {
       margin: 0;
@@ -51,15 +61,11 @@
       font-weight: bold;
       margin-bottom: 5px;
     }
-    .coin-label.bnb {
-      color: #F3BA2F; /* رنگ طلایی مخصوص BNB */
-    }
-    .coin-label.btc {
-      color: #F7931A; /* رنگ نارنجی مخصوص BTC */
-    }
+    .coin-label.bnb { color: #F3BA2F; }
+    .coin-label.btc { color: #F7931A; }
     .footer {
       margin-top: 20px;
-      font-size: 1.1rem; /* بزرگ‌تر از قبل */
+      font-size: 1.1rem;
       color: #666;
       font-weight: bold;
     }
@@ -71,29 +77,29 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <main class="container">
     <h1>🐱 MeowAid 🐾</h1>
     <p>
       MeowAid is an independent charity project dedicated to helping street cats.<br>
       Your crypto donations provide food, medicine, and veterinary care for cats in need.<br>
       Every transaction saves a life. ❤️
     </p>
-    <div class="crypto" onclick="copyToClipboard('0x33C15652119d737E8623dc3E9692288C5BE5fB28')">
+    <section class="crypto" onclick="copyToClipboard('0x33C15652119d737E8623dc3E9692288C5BE5fB28')">
       <div class="coin-label bnb">BNB</div>
       0x33C15652119d737E8623dc3E9692288C5BE5fB28
       <small>Click to copy</small>
-    </div>
-    <div class="crypto" onclick="copyToClipboard('bc1q2elvl2e2e5xef4gnegwjj8tqtql8t0626zuf5t')">
+    </section>
+    <section class="crypto" onclick="copyToClipboard('bc1q2elvl2e2e5xef4gnegwjj8tqtql8t0626zuf5t')">
       <div class="coin-label btc">BTC</div>
       bc1q2elvl2e2e5xef4gnegwjj8tqtql8t0626zuf5t
       <small>Click to copy</small>
-    </div>
+    </section>
     <p>
       Join us in creating a kinder world for animals.<br>
       If you care about cats, donate now and be their voice.
     </p>
-    <div class="footer">Follow us on Instagram: @Meow_Aid</div>
-  </div>
+    <footer class="footer">Follow us on Instagram: @Meow_Aid</footer>
+  </main>
 
   <script>
     function copyToClipboard(text) {
